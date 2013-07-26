@@ -6,6 +6,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :subject
       t.string :image
       t.string :isbn
+      t.references :user
 
       t.timestamps
     end
